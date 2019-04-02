@@ -796,6 +796,11 @@ header .active a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .navbar-brand {
+    position: relative;
+    right: 20px;
+    bottom: 2px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -850,6 +855,11 @@ header .active a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .navbar-brand {
+    position: relative;
+    right: 20px;
+    bottom: 2px;
   }
 }
 /*# sourceMappingURL=main.css.map */
