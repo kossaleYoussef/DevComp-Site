@@ -712,22 +712,24 @@ header .active a {
   }
 }
 
-@supports (-ms-ime-align: auto) {
-  .navbar-toggle {
-    border: 2px solid #b3b2b2;
-  }
-  .navbar-toggle .icon-bar {
-    background-color: #b3b2b2;
-  }
-  #about {
-    min-height: 600px;
-    max-height: 600px !important;
-  }
-  #about-content-box {
-    height: 600px;
-  }
-}
+/*@supports (-ms-ime-align:auto) {
+    .navbar-toggle {
+        border: 2px solid #b3b2b2;
 
+        .icon-bar {
+            background-color: #b3b2b2;
+        }
+    }
+
+    #about {
+        min-height: 600px;
+        max-height: 600px !important;
+    }
+    
+    #about-content-box {
+        height: 600px;
+    }
+}*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .content-title h3, #home-heading h3 {
     font-size: 30px !important;
@@ -766,29 +768,19 @@ header .active a {
   .navbar .navbar-collapse .nav li:hover {
     border-right: 2px solid #e25d61;
   }
-  #about-bg {
-    width: 100%;
-    float: none !important;
-    position: absolute;
-    background-attachment: fixed;
-  }
-  #about-bg .blacklayout {
-    height: 100%;
-    border-right: 0;
-    border-top: 0;
-    background-color: rgba(0, 0, 0, 0.699);
-  }
   #about {
-    max-height: 500px !important;
+    min-height: auto;
   }
-  #about-content-box {
-    height: 500px;
+  #about #about-bg {
+    display: none;
   }
-  #about-content-box #about-content-box-outer {
-    height: 100%;
+  #about #about-content-box {
+    position: relative;
+    bottom: 50px;
+    height: auto;
   }
-  #about-content-box #about-content-box-outer #about-content-box-inner * {
-    color: #fcfcfc;
+  .nav-wrapper {
+    padding: 0 !important;
   }
   #pricing .col-md-4 {
     width: 40%;
@@ -824,29 +816,19 @@ header .active a {
   .navbar .navbar-collapse .nav li:hover {
     border-right: 2px solid #e25d61;
   }
-  #about-bg {
-    width: 100%;
-    float: none !important;
-    position: absolute;
-    background-attachment: fixed;
-  }
-  #about-bg .blacklayout {
-    height: 100%;
-    border-right: 0;
-    border-top: 0;
-    background-color: rgba(0, 0, 0, 0.699);
-  }
   #about {
-    max-height: 500px !important;
+    min-height: auto;
   }
-  #about-content-box {
-    height: 500px;
+  #about #about-bg {
+    display: none;
   }
-  #about-content-box #about-content-box-outer {
-    height: 100%;
+  #about #about-content-box {
+    height: auto;
+    position: relative;
+    bottom: 50px;
   }
-  #about-content-box #about-content-box-outer #about-content-box-inner * {
-    color: #fcfcfc;
+  .nav-wrapper {
+    padding: 0 !important;
   }
   #pricing .pricing-box {
     position: static;
