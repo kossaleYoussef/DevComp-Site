@@ -59,11 +59,15 @@ header .navbar {
 }
 
 header .navbar .navbar-toggle {
-  border: 2px solid #fcfcfc8e;
+  border: 2px solid transparent;
   width: 40px;
   height: 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+header .navbar .navbar-toggle .icon-bar {
+  background-color: #cc4045;
 }
 
 header .navbar .navbar-toggle:hover .icon-bar {
